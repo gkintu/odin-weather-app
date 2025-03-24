@@ -52,17 +52,6 @@ function updateUI() {
   if (state.weatherData) {
     const { current, forecast } = state.weatherData;
     const unitSymbol = state.currentUnit === 'metric' ? '°C' : '°F';
-
-    function formatUserInput(input) {
-         const trimmed = input.trim();
-      if (trimmed === '') return '';
-      return trimmed.split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(' ');
-    }
-
-    currentWeatherTitleEl.textContent = `Current Weather in ${formatUserInput(state.currentLocation)}`;
-
     currentTempEl.textContent = `Temperature: ${current.temp}${unitSymbol}`;
     currentConditionsEl.textContent = `Conditions: ${current.conditions}`;
 

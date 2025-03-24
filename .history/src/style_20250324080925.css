@@ -2,8 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
-  padding: 20px;
-  min-width: 380px;
+  padding: 0;
 }
 
 .container {
@@ -24,13 +23,10 @@ form {
   margin-bottom: 20px;
 }
 
-
-
 input[type="text"] {
   padding: 10px;
   width: 70%;
   margin-right: 10px;
-  border-radius: 5px;
 }
 
 button {
@@ -39,7 +35,6 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 button:hover {
@@ -64,9 +59,7 @@ button:hover {
 
 #forecast-list {
   display: flex;
-  gap: 5px;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .forecast-day {

@@ -64,7 +64,6 @@ button:hover {
 
 #forecast-list {
   display: flex;
-  gap: 5px;
   justify-content: space-between;
   margin-bottom: 10px;
 }

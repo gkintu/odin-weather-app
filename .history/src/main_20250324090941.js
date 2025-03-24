@@ -56,9 +56,7 @@ function updateUI() {
     function formatUserInput(input) {
          const trimmed = input.trim();
       if (trimmed === '') return '';
-      return trimmed.split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(' ');
+      return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
     }
 
     currentWeatherTitleEl.textContent = `Current Weather in ${formatUserInput(state.currentLocation)}`;

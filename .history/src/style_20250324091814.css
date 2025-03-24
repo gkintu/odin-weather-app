@@ -3,7 +3,6 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 20px;
-  min-width: 380px;
 }
 
 .container {
@@ -64,9 +63,7 @@ button:hover {
 
 #forecast-list {
   display: flex;
-  gap: 5px;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .forecast-day {
